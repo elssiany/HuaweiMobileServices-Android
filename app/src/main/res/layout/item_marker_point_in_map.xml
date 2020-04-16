@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/map_info_window_shape"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:padding="10dp">
+
+        <TextView
+            tools:text="@string/app_name"
+            android:id="@+id/headquarter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="13dp"
+            android:text="@{directoryModel.namePoint}"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            tools:text="@string/app_name"
+            android:id="@+id/headquarter_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="4dp"
+            android:text="@{directoryModel.addressPoint}"
+            android:textColor="@color/negro" />
+
+        <TextView
+            tools:text="@string/app_name"
+            android:id="@+id/opening_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</FrameLayout>

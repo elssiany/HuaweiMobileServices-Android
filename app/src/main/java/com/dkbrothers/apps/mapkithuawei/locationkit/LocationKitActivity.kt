@@ -121,7 +121,7 @@ class LocationKitActivity : AppCompatActivity() {
             if (locations.isNotEmpty()) {
                 val location = locations[0]
                     tvLocationActual?.text = getString(R.string.location_lat_long,
-                        location.longitude.toString(),location.latitude.toString())
+                        location.latitude.toString(),location.longitude.toString())
             }
         }
         override fun onLocationAvailability(locationAvailability: LocationAvailability) {

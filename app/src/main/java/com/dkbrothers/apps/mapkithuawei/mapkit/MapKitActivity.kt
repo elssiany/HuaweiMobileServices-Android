@@ -4,13 +4,14 @@ import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.dkbrothers.apps.mapkithuawei.R
 import com.dkbrothers.apps.mapkithuawei.numRandom
+import com.huawei.hms.maps.CameraUpdateFactory
 import com.huawei.hms.maps.HuaweiMap
 import com.huawei.hms.maps.MapView
 import com.huawei.hms.maps.OnMapReadyCallback
@@ -40,8 +41,7 @@ class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
         Manifest.permission.WRITE_EXTERNAL_STORAGE,
         Manifest.permission.READ_EXTERNAL_STORAGE,
         Manifest.permission.ACCESS_COARSE_LOCATION,
-        Manifest.permission.ACCESS_FINE_LOCATION,
-        Manifest.permission.INTERNET
+        Manifest.permission.ACCESS_FINE_LOCATION
     )
 
     private val locations = arrayOf(
@@ -97,6 +97,7 @@ class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
         hMap = huaweiMap
         hMap?.isMyLocationEnabled = true// Enable the my-location overlay.
         hMap?.uiSettings?.isMyLocationButtonEnabled = true// Enable the my-location icon.
+        /*
         hMap?.setOnMapClickListener { latLng ->
             Toast.makeText(
                 applicationContext,
@@ -104,6 +105,7 @@ class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
                 Toast.LENGTH_SHORT
             ).show()
         }
+        */
         hMap?.setOnMarkerClickListener { marker ->
             Toast.makeText(
                 applicationContext,
@@ -120,6 +122,7 @@ class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
 
     fun addMarker(view: View?) {
         val location = locations[numRandom(0,locations.size-1)]
+        val latLng = LatLng(location.latitud,location.longitud)
         if (null != mMarker) {
             //para eliminar el marker anterior
             //mMarker!!.remove()
@@ -130,6 +133,10 @@ class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
             .title(location.nombre)
             .snippet("This is a snippet example!")
         mMarker = hMap?.addMarker(options)
+        hMap?.moveCamera(CameraUpdateFactory.newLatLng(latLng))
+        hMap?.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 13f))
+        //Method for setting custom information window.
+        hMap?.setInfoWindowAdapter(CustomInfoWindowMapAdapter(this,location))
     }
 
 
