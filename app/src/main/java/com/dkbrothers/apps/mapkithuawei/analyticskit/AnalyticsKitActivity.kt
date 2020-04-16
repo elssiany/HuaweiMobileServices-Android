@@ -64,6 +64,7 @@ class AnalyticsKitActivity : AppCompatActivity() {
         if (answer.isNotEmpty()) {
             reportAnswerEvt(answer)
             analyzeAnswer(answer)
+            inputAnswer?.setText("")
         }else{
             Toast.makeText(applicationContext,getString(R.string.enter_your_answer),
                 Toast.LENGTH_SHORT).show()

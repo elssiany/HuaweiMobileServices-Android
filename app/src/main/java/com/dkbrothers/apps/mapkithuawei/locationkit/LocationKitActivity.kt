@@ -120,11 +120,10 @@ class LocationKitActivity : AppCompatActivity() {
             val locations = locationResult.locations
             if (locations.isNotEmpty()) {
                 val location = locations[0]
-                tvLocationActual?.text = getString(R.string.location_lat_long,
-                    location.longitude,location.latitude)
+                    tvLocationActual?.text = getString(R.string.location_lat_long,
+                        location.longitude.toString(),location.latitude.toString())
             }
         }
-
         override fun onLocationAvailability(locationAvailability: LocationAvailability) {
             if(!locationAvailability.isLocationAvailable) {
                 Toast.makeText(applicationContext,"Ubicación no disponible, por favor verificar GPS",
@@ -147,8 +146,7 @@ class LocationKitActivity : AppCompatActivity() {
                     ?.requestLocationUpdates(
                         mLocationRequest,
                         mLocationCallback,
-                        Looper.getMainLooper()
-                    )
+                        Looper.getMainLooper())
                     ?.addOnSuccessListener {
                         Log.i(TAG, "requestLocationUpdatesWithCallback onSuccess")
                     }
@@ -175,18 +173,6 @@ class LocationKitActivity : AppCompatActivity() {
      */
     private fun removeLocationUpdatesWithCallback() {
         fusedLocationProviderClient?.removeLocationUpdates(mLocationCallback)
-            ?.addOnSuccessListener {
-                Log.i(
-                    TAG,
-                    "removeLocationUpdatesWithCallback onSuccess"
-                )
-            }
-            ?.addOnFailureListener { e ->
-                Log.e(
-                    TAG,
-                    "removeLocationUpdatesWithCallback onFailure:" + e.message
-                )
-            }
     }
 
 

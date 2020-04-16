@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name" translatable="false">Samples HMServices</string>
+    <string name="app_name" translatable="false">HMServices samples</string>
     <string name="agregar_marker_al_mapa">Agregar marker al mapa</string>
     <string name="location_kit">Location Kit</string>
     <string name="map_kit">Map Kit</string>
     <string name="ver_documentaci_n"><u>Ver documentación</u></string>
-    <string name="location_lat_long">Latitud: %1$d \n Longitud: %2$d</string>
+    <string name="location_lat_long">Latitud: %1$s \n Longitud: %2$s</string>
     <string name="push_kit">Push Kit</string>
     <string name="pushkit_message_not_token"><![CDATA[The Obtain a token in the class <PushKitService>]]></string>
     <string name="notification_came_through_pushkit">A notification came through PushKit</string>
@@ -24,5 +24,5 @@
     <string name="enter_your_answer">Enter your answer</string>
     <string name="china_s_largest_and_most_famous_mobile_phone_sales_company">¿China\'s largest and most famous mobile phone sales company?</string>
     <string name="you_earned_d_points">You earned %d points</string>
-    <string name="go_to_develop_quality_analytics"><![CDATA[Go to Develop > Growing > Advanced Analytics. The Analytics page is displayed]]></string>
+    <string name="go_to_develop_quality_analytics"><![CDATA[Go to AppGallery Connect > Analytics > Click the name of an app > Advanced analysis > Dashboard > App overview. The Analytics page is displayed]]></string>
 </resources>
