@@ -6,7 +6,7 @@ HuaweiHMSNow App is a sample Tutorials Android application 📱 of sdks Huawei M
 
 **You can Install and test latest app 👇**
 
-[![HuaweiHMSNow App](https://img.shields.io/badge/HuaweiHMSNowApp%F0%9F%93%A8%F0%9F%93%B2-APK-brightgreen.svg?style=for-the-badge&logo=android)](https://github.com/ikevinsm/ChatNow/raw/master/apk/HuaweiHMSNow.apk)
+[![HuaweiHMSNow App](https://img.shields.io/badge/HuaweiHMSNowApp%F0%9F%93%A8%F0%9F%93%B2-APK-brightgreen.svg?style=for-the-badge&logo=android)](https://github.com/ikevinsm/HuaweiMobileServices-Android/raw/master/apk/HuaweiHMSNow.apk)
 
 ## About
 HuaweiHMSNow App that uses the sdks of Huawei Mobile Services to apply in real projects, custom examples of codelabs Huawei Developers.
