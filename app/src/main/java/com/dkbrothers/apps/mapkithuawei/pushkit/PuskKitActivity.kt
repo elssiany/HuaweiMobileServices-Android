@@ -34,8 +34,11 @@ class PuskKitActivity : AppCompatActivity() {
         startActivity(
             Intent(
                 Intent.ACTION_VIEW,
-            Uri.parse("https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/push-introduction"))
-        )
+            Uri.parse(getString(R.string.push_kit_documentation_link))))
+    }
+
+    fun onGetToken(view: View) {
+        getToken()
     }
 
     /**
@@ -65,8 +68,6 @@ class PuskKitActivity : AppCompatActivity() {
         }.start()
     }
 
-    fun onGetToken(view: View) {
-        getToken()
-    }
+
 
 }

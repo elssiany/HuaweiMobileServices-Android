@@ -58,7 +58,7 @@ class LocationKitActivity : AppCompatActivity() {
 
     fun onGoDocumentation(view: View) {
         startActivity(Intent(Intent.ACTION_VIEW,
-            Uri.parse("https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/location-guidev4")))
+            Uri.parse(getString(R.string.location_kit_documentation_link))))
     }
 
     private fun initSettings(){

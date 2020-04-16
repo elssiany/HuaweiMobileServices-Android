@@ -37,7 +37,6 @@ class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
         Manifest.permission.INTERNET
     )
 
-
     private val locations = arrayOf(
         LocationStoreModel(
             "Centro Comercial", R.drawable.smart_city,
@@ -71,8 +70,6 @@ class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
         if (!hasPermissions(this, RUNTIME_PERMISSIONS)) {
             ActivityCompat.requestPermissions(this, RUNTIME_PERMISSIONS, PERMISSIONS_REQUEST_MAPS)
         }
-
-        //get mapview instance
 
         //get mapview instance
         mMapView = findViewById(R.id.mapView)

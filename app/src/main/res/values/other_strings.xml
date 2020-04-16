@@ -1,0 +1,10 @@
+<resources>
+    <string name="push_kit_documentation_link"
+        translatable="false">https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/push-introduction</string>
+    <string name="map_kit_documentation_link"
+        translatable="false">https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/hms-map-v4-abouttheservice</string>
+    <string name="location_kit_documentation_link"
+        translatable="false">https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/location-guidev4</string>
+    <string name="analytics_kit_documentation_link"
+        translatable="false">https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3021001</string>
+</resources>
