@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Huawei Mobile Services</string>
+    <string name="agregar_marker_al_mapa">Agregar marker al mapa</string>
+    <string name="location_kit">Location Kit</string>
+    <string name="map_kit">Map Kit</string>
+    <string name="ver_documentaci_n"><u>Ver documentación</u></string>
+    <string name="location_lat_long">Latitud: %1$d \n Longitud: %2$d</string>
+</resources>
