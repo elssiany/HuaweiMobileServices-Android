@@ -58,4 +58,7 @@ dependencies {
     //Push Kit
     implementation 'com.huawei.hms:push:4.0.2.300'
 
+    //Analytics Kit
+    implementation 'com.huawei.hms:hianalytics:4.0.3.300'
+
 }
