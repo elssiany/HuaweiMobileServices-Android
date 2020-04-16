@@ -19,6 +19,13 @@ import com.huawei.hms.maps.model.LatLng
 import com.huawei.hms.maps.model.Marker
 import com.huawei.hms.maps.model.MarkerOptions
 
+
+/*
+ * todo Map Kit Docs
+  *https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/hms-map-v4-abouttheservice
+  * Codelab:
+  * https://developer.huawei.com/consumer/en/codelab/HMSMapKit/index.html#0
+ * */
 class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
 
 

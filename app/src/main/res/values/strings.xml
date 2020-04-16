@@ -15,4 +15,7 @@
     <string name="subscribing_offers_please_wait">Subscribing to offers, please wait</string>
     <string name="subscribe_failed">Subscribe failed</string>
     <string name="subscribe_complete">Subscribe Complete</string>
+    <string name="crash_service">Crash Service</string>
+    <string name="crash_test">Crash test</string>
+    <string name="go_to_develop_quality_crash"><![CDATA[Go to Develop > Quality > Crash. The Crash page is displayed]]></string>
 </resources>

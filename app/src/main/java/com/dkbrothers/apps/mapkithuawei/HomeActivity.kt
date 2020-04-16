@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.dkbrothers.apps.mapkithuawei.crashservice.CrashServiceActivity
 import com.dkbrothers.apps.mapkithuawei.locationkit.LocationKitActivity
 import com.dkbrothers.apps.mapkithuawei.mapkit.MapKitActivity
 import com.dkbrothers.apps.mapkithuawei.pushkit.PuskKitActivity
@@ -27,6 +28,10 @@ class HomeActivity : AppCompatActivity() {
 
     fun onLocationKit(view: View) {
         startActivity(Intent(this, LocationKitActivity::class.java))
+    }
+
+    fun onCrashService(view: View) {
+        startActivity(Intent(this, CrashServiceActivity::class.java))
     }
 
 

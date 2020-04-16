@@ -23,7 +23,12 @@ import com.huawei.hms.common.ApiException
 import com.huawei.hms.common.ResolvableApiException
 import com.huawei.hms.location.*
 
-
+/*
+ * todo Location Kit Docs
+  *https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/location-guidev4
+  * Codelab:
+  * https://developer.huawei.com/consumer/en/codelab/HMSLocationKit/index.html#0
+ * */
 class LocationKitActivity : AppCompatActivity() {
 
 

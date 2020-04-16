@@ -19,6 +19,15 @@
 
     <Button
         style="@style/HomeStyleButtons"
+        android:drawableStart="@drawable/ic_agc_crash"
+        android:id="@+id/btn_crash_service"
+        android:layout_above="@+id/btn_push_kit"
+        android:onClick="onCrashService"
+        android:layout_width="match_parent"
+        android:text="@string/crash_service"/>
+
+    <Button
+        style="@style/HomeStyleButtons"
         android:drawableStart="@drawable/pushkit_icon"
         android:id="@+id/btn_push_kit"
         android:layout_above="@+id/btn_location_kit"

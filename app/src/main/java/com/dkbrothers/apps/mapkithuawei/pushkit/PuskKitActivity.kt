@@ -15,6 +15,12 @@ import com.huawei.hms.aaid.HmsInstanceId
 import com.huawei.hms.push.HmsMessaging
 
 
+/*
+ * todo Push Kit Docs
+  *https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/push-introduction
+  * Codelab:
+  * https://developer.huawei.com/consumer/en/codelab/HMSPushKit/index.html#0
+ * */
 class PuskKitActivity : AppCompatActivity() {
 
     private val TAG = "PushDemoLog"

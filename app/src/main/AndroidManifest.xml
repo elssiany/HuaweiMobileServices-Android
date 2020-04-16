@@ -16,7 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,LockedOrientationActivity">
-        <activity android:name=".analyticskit.AnalyticsKitActivity"></activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".crashservice.CrashServiceActivity"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".analyticskit.AnalyticsKitActivity" />
         <activity
             android:name=".pushkit.PuskKitActivity"
             android:screenOrientation="portrait" />
