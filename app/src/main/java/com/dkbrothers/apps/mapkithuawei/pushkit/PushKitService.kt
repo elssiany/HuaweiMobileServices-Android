@@ -1,13 +1,15 @@
 package com.dkbrothers.apps.mapkithuawei.pushkit
 
 import android.util.Log
+import android.widget.Toast
+import com.dkbrothers.apps.mapkithuawei.R
 import com.huawei.hms.push.HmsMessageService
 import com.huawei.hms.push.RemoteMessage
 
 
 class PushKitService: HmsMessageService() {
 
-    private val TAG = "PushKitService"
+    private val TAG = "PushDemoLog"
 
     /**
     * todo If the EMUI version is earlier than 10.0 on a Huawei device,
@@ -23,11 +25,22 @@ class PushKitService: HmsMessageService() {
     /*
     * todo for custom notifications
     * */
-    override fun onMessageReceived(message: RemoteMessage) {
-        val bodyArrays =
-            message.notification.bodyLocalizationArgs
-        //val key = resources.getString(R.string.body_key)
-        //val body = String.format(key, bodyArrays[0], bodyArrays[1])
-        Log.i(TAG, bodyArrays[0])
+    override fun onMessageReceived(remoteMessage: RemoteMessage) {
+        if (remoteMessage.data.isNotEmpty()) {
+            Log.i(TAG, "Message data payload: " + remoteMessage.data)
+        }
+        if (remoteMessage.notification != null) {
+            Log.i(TAG, "Message Notification Body: " + remoteMessage.notification.body)
+            Toast.makeText(this,
+                getString(R.string.notification_came_through_pushkit),Toast.LENGTH_LONG).show()
+        }
     }
+
+
+    override fun onMessageSent(s: String?) {}
+
+
+    override fun onSendError(s: String?, e: Exception?) {}
+
+
 }

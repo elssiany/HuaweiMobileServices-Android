@@ -7,4 +7,12 @@
     <string name="location_lat_long">Latitud: %1$d \n Longitud: %2$d</string>
     <string name="push_kit">Push Kit</string>
     <string name="pushkit_message_not_token"><![CDATA[The Obtain a token in the class <PushKitService>]]></string>
+    <string name="notification_came_through_pushkit">A notification came through PushKit</string>
+    <string name="get_token">Get token</string>
+    <string name="subscribe_to_offers">Subscribe to offers</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="gettingtoken_please_wait">Getting token, please wait</string>
+    <string name="subscribing_offers_please_wait">Subscribing to offers, please wait</string>
+    <string name="subscribe_failed">Subscribe failed</string>
+    <string name="subscribe_complete">Subscribe Complete</string>
 </resources>
