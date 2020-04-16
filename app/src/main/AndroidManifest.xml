@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.dkbrothers.apps.mapkithuawei">
 
@@ -19,19 +18,30 @@
         tools:ignore="AllowBackup,LockedOrientationActivity">
         <activity
             android:screenOrientation="portrait"
-            android:name=".locationkit.LocationKitActivity" />
+            android:name=".pushkit.PuskKitActivity"/>
         <activity
-            android:screenOrientation="portrait"
-            android:name=".mapkit.MapKitActivity" />
+            android:name=".locationkit.LocationKitActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:screenOrientation="portrait"
-            android:name=".MainActivity">
+            android:name=".mapkit.MapKitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".pushkit.PushKitService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

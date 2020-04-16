@@ -5,4 +5,6 @@
     <string name="map_kit">Map Kit</string>
     <string name="ver_documentaci_n"><u>Ver documentación</u></string>
     <string name="location_lat_long">Latitud: %1$d \n Longitud: %2$d</string>
+    <string name="push_kit">Push Kit</string>
+    <string name="pushkit_message_not_token"><![CDATA[The Obtain a token in the class <PushKitService>]]></string>
 </resources>

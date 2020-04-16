@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
 
     <TextView
         android:textSize="18sp"
@@ -18,35 +18,30 @@
         android:text="@string/app_name" />
 
     <Button
+        style="@style/HomeStyleButtons"
+        android:drawableStart="@drawable/pushkit_icon"
+        android:id="@+id/btn_push_kit"
+        android:layout_above="@+id/btn_location_kit"
+        android:onClick="onPushKit"
+        android:layout_width="match_parent"
+        android:text="@string/push_kit"/>
+
+    <Button
         android:drawableStart="@drawable/locationkit_icon"
-        android:layout_marginBottom="10dp"
         android:id="@+id/btn_location_kit"
         android:layout_above="@+id/btn_map_kit"
-        android:textColor="@color/colorPrimary"
-        android:textAllCaps="false"
         android:onClick="onLocationKit"
-        app:backgroundTint="@color/blanco"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="27dp"
-        app:cornerRadius="30dp"
+        style="@style/HomeStyleButtons"
         android:text="@string/location_kit"/>
 
     <Button
         android:drawableStart="@drawable/mapkit_icon"
         android:id="@+id/btn_map_kit"
-        android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/colorPrimary"
-        android:textAllCaps="false"
         android:onClick="onMapKit"
-        app:backgroundTint="@color/blanco"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="27dp"
-        app:cornerRadius="30dp"
+        style="@style/HomeStyleButtons"
         android:text="@string/map_kit"/>
 
 </RelativeLayout>

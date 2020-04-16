@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".locationkit.LocationKitActivity">
+    tools:context=".pushkit.PuskKitActivity">
     <TextView
         android:textSize="18sp"
         android:textStyle="bold"
@@ -14,18 +14,20 @@
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/location_kit" />
-    <TextView
+        android:text="@string/push_kit" />
+    <Button
+        android:id="@+id/btn_get_token"
         android:layout_centerInParent="true"
+        android:onClick="onGetToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
         android:text="@string/app_name"
-        android:textColor="@color/colorPrimary"
-        android:background="@drawable/shape_rectangle"
-        android:id="@+id/tv_location_actual"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:gravity="center"
-        android:padding="20dp"
-        android:layout_width="match_parent"
+        android:textColor="@color/blanco"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_get_token"
+        android:id="@+id/tv_token"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView
         android:onClick="onGoDocumentation"

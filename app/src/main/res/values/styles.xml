@@ -8,4 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style
+        name="HomeStyleButtons" parent="Widget.AppCompat.TextView">
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:backgroundTint">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
 </resources>

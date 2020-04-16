@@ -55,5 +55,7 @@ dependencies {
     //Location Kit
     implementation 'com.huawei.hms:location:4.0.2.300'
 
+    //Push Kit
+    implementation 'com.huawei.hms:push:4.0.2.300'
 
 }
