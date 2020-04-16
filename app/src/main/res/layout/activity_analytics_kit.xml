@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".analyticskit.AnalyticsKitActivity">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/analytics_kit" />
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="@string/china_s_largest_and_most_famous_mobile_phone_sales_company"
+        android:textColor="@color/blanco"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/input_answer"
+        android:id="@+id/lb_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:maxLength="20"
+        android:textColor="@color/negro"
+        android:gravity="start"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="@string/enter_your_answer"
+        android:background="@drawable/shape_rectangle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:layout_above="@+id/btn_analytics_test"
+        android:inputType="text"
+        android:id="@+id/input_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:textAllCaps="false"
+        android:text="@string/send_reply"
+        android:textColor="@color/blanco"
+        android:id="@+id/btn_analytics_test"
+        android:layout_centerInParent="true"
+        android:onClick="onAnalyticsTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="@string/go_to_develop_quality_analytics"
+        android:textColor="@color/blanco"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_analytics_test"
+        android:id="@+id/tv_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:onClick="onGoDocumentation"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/ver_documentaci_n"
+        android:textColor="@color/blanco"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

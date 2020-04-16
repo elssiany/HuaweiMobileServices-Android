@@ -19,6 +19,15 @@
 
     <Button
         style="@style/HomeStyleButtons"
+        android:drawableStart="@drawable/analytics_kit_icon"
+        android:id="@+id/btn_analytics_kit"
+        android:layout_above="@+id/btn_crash_service"
+        android:onClick="onAnalyticsKit"
+        android:layout_width="match_parent"
+        android:text="@string/analytics_kit"/>
+
+    <Button
+        style="@style/HomeStyleButtons"
         android:drawableStart="@drawable/ic_agc_crash"
         android:id="@+id/btn_crash_service"
         android:layout_above="@+id/btn_push_kit"

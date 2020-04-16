@@ -66,6 +66,9 @@ class PuskKitActivity : AppCompatActivity() {
     }
 
 
+    /**
+    * Este metodo solo se debe ser invocado cuando el <getToken()> ya fue llamado por primera vez
+    * */
     private fun subscribeToATopic(){
         try {
             HmsMessaging.getInstance(this).subscribe("summer-offers")
@@ -102,10 +105,10 @@ class PuskKitActivity : AppCompatActivity() {
                     val appId =
                         AGConnectServicesConfig.fromContext(this@PuskKitActivity)
                             .getString("client/app_id")
-                    val pushtoken = HmsInstanceId.getInstance(this@PuskKitActivity).getToken(appId, "HCM")
-                    if (!TextUtils.isEmpty(pushtoken)) {
-                        Log.i(TAG, "get token:$pushtoken")
-                        showLog(pushtoken)
+                    val pushToken = HmsInstanceId.getInstance(this@PuskKitActivity).getToken(appId, "HCM")
+                    if (!TextUtils.isEmpty(pushToken)) {
+                        Log.i(TAG, "get token:$pushToken")
+                        showLog(pushToken)
                     }else{
                         showLog(getString(R.string.pushkit_message_not_token))
                     }
