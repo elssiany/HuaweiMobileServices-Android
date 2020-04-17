@@ -22,7 +22,7 @@ HuaweiHMSNow App that uses the sdks of Huawei Mobile Services to apply in real p
   - [Push Kit](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/push-introduction) - HUAWEI Push Kit is a messaging service provided by Huawei for developers. It establishes a messaging channel from the cloud to devices.
   - [Analytics Kit](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3021001) -HUAWEI Analytics Kit predefines a large number of analytics models to help you clearly understand user behavior and gain in-depth insights into users, products, and content.
   - [Crash Service](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-crash-introduction) -The Crash service of AppGallery Connect is a lightweight crash analysis service, in which Huawei provides a Crash SDK that can be quickly integrated into your app, without the need for coding.
-
+- [AppGallery Connect Remote Configuration](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-introduction) -HUAWEI AppGallery Connect provides the Remote Configuration service for you to manage parameters online. With the service, you can change the behavior and appearance of your app online without requiring users to update the app.
 
 
 ## Contact
