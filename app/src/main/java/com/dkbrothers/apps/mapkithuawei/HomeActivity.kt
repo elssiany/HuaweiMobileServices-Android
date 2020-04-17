@@ -31,13 +31,16 @@ class HomeActivity : AppCompatActivity() {
         startActivity(Intent(this, AnalyticsKitActivity::class.java))
     }
 
-
-
     fun onLocationKit(view: View) {
         startActivity(Intent(this, LocationKitActivity::class.java))
     }
 
     fun onCrashService(view: View) {
+        startActivity(Intent(this, CrashServiceActivity::class.java))
+    }
+
+
+    fun onRemoteConfiguration(view: View) {
         startActivity(Intent(this, CrashServiceActivity::class.java))
     }
 

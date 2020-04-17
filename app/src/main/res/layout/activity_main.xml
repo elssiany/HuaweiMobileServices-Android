@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,59 +7,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeActivity">
 
-    <TextView
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name" />
-
-    <Button
-        style="@style/HomeStyleButtons"
-        android:drawableStart="@drawable/analytics_kit_icon"
-        android:id="@+id/btn_analytics_kit"
-        android:layout_above="@+id/btn_crash_service"
-        android:onClick="onAnalyticsKit"
+    <LinearLayout
+        android:layout_margin="6dp"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:text="@string/analytics_kit"/>
+        android:layout_height="wrap_content">
 
-    <Button
-        style="@style/HomeStyleButtons"
-        android:drawableStart="@drawable/ic_agc_crash"
-        android:id="@+id/btn_crash_service"
-        android:layout_above="@+id/btn_push_kit"
-        android:onClick="onCrashService"
-        android:layout_width="match_parent"
-        android:text="@string/crash_service"/>
+        <TextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
 
-    <Button
-        style="@style/HomeStyleButtons"
-        android:drawableStart="@drawable/pushkit_icon"
-        android:id="@+id/btn_push_kit"
-        android:layout_above="@+id/btn_location_kit"
-        android:onClick="onPushKit"
-        android:layout_width="match_parent"
-        android:text="@string/push_kit"/>
+        <Button
+            android:layout_marginTop="40dp"
+            style="@style/HomeStyleButtons"
+            android:drawableStart="@drawable/analytics_kit_icon"
+            android:onClick="onAnalyticsKit"
+            android:layout_width="match_parent"
+            android:text="@string/analytics_kit"/>
 
-    <Button
-        android:drawableStart="@drawable/locationkit_icon"
-        android:id="@+id/btn_location_kit"
-        android:layout_above="@+id/btn_map_kit"
-        android:onClick="onLocationKit"
-        android:layout_width="match_parent"
-        style="@style/HomeStyleButtons"
-        android:text="@string/location_kit"/>
+        <Button
+            style="@style/HomeStyleButtons"
+            android:drawableStart="@drawable/ic_agc_crash"
+            android:onClick="onCrashService"
+            android:layout_width="match_parent"
+            android:text="@string/crash_service"/>
 
-    <Button
-        android:drawableStart="@drawable/mapkit_icon"
-        android:id="@+id/btn_map_kit"
-        android:layout_alignParentBottom="true"
-        android:onClick="onMapKit"
-        android:layout_width="match_parent"
-        style="@style/HomeStyleButtons"
-        android:text="@string/map_kit"/>
+        <Button
+            style="@style/HomeStyleButtons"
+            android:drawableStart="@drawable/pushkit_icon"
+            android:onClick="onPushKit"
+            android:layout_width="match_parent"
+            android:text="@string/push_kit"/>
 
-</RelativeLayout>
+        <Button
+            android:drawableStart="@drawable/locationkit_icon"
+            android:onClick="onLocationKit"
+            android:layout_width="match_parent"
+            style="@style/HomeStyleButtons"
+            android:text="@string/location_kit"/>
+
+        <Button
+            android:drawableStart="@drawable/mapkit_icon"
+            android:onClick="onMapKit"
+            android:layout_width="match_parent"
+            style="@style/HomeStyleButtons"
+            android:text="@string/map_kit"/>
+
+        <Button
+            android:drawableStart="@drawable/remote_config_icon"
+            android:onClick="onRemoteConfiguration"
+            android:layout_width="match_parent"
+            style="@style/HomeStyleButtons"
+            android:text="@string/remote_configuration"/>
+
+    </LinearLayout>
+
+</ScrollView>

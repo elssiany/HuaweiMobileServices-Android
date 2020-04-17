@@ -25,4 +25,5 @@
     <string name="china_s_largest_and_most_famous_mobile_phone_sales_company">¿China\'s largest and most famous mobile phone sales company?</string>
     <string name="you_earned_d_points">You earned %d points</string>
     <string name="go_to_develop_quality_analytics"><![CDATA[Go to AppGallery Connect > Analytics > Click the name of an app > Advanced analysis > Dashboard > App overview. The Analytics page is displayed]]></string>
+    <string name="remote_configuration">Remote Configuration</string>
 </resources>
