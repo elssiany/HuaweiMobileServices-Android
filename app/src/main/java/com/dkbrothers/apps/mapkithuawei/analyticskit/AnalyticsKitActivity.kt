@@ -57,6 +57,9 @@ class AnalyticsKitActivity : AppCompatActivity() {
 
         // Enable collection capability
         hiAnalyticsInstance?.setAnalyticsEnabled(true)
+
+        hiAnalyticsInstance?.setCurrentActivity(this,"pantalla_analytics_kit",
+            AnalyticsKitActivity::javaClass.name)
     }
 
     fun onAnalyticsTest(view: View) {
@@ -91,13 +94,13 @@ class AnalyticsKitActivity : AppCompatActivity() {
 
         // Initialize parameters.
         val bundle = Bundle()
-        bundle.putString("question", getString(R.string.china_s_largest_and_most_famous_mobile_phone_sales_company))
-        bundle.putString("answer", answer)
+        bundle.putString("pregunta", getString(R.string.china_s_largest_and_most_famous_mobile_phone_sales_company))
+        bundle.putString("respuesta", answer)
         val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH)
         bundle.putString("answerTime", sdf.format(Date()))
 
         // Report a predefined event.
-        hiAnalyticsInstance?.onEvent("Answer", bundle)
+        hiAnalyticsInstance?.onEvent("Prueba", bundle)
     }
 
     private fun analyzeAnswer(answer: String){

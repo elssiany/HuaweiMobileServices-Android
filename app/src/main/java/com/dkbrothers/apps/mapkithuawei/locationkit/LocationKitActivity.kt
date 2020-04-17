@@ -36,11 +36,16 @@ class LocationKitActivity : AppCompatActivity() {
     private val TAG = "LocationKitActivity"
 
     private val PERMISSIONS_REQUEST_LOCATION = 9097
-    private var fusedLocationProviderClient:FusedLocationProviderClient? = null
     private var mLocationRequest: LocationRequest? = null
     private var settingsClient: SettingsClient? = null
     private var locationManager:LocationManager? = null
     private var tvLocationActual:TextView? = null
+
+
+    //todo Se crea un cliente de proveedor de ubicación
+    private val fusedLocation: FusedLocationProviderClient by lazy {
+        LocationServices.getFusedLocationProviderClient(this)
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,11 +73,10 @@ class LocationKitActivity : AppCompatActivity() {
 
     private fun initSettings(){
 
-        //todo Se crea un cliente de proveedor de ubicación y cliente de configuración de dispositivo
-        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
+        //cliente de configuración de dispositivo
         settingsClient = LocationServices.getSettingsClient(this)
 
-        //todo Solicito información de ubicación
+        //Solicito información de ubicación
         mLocationRequest = LocationRequest()
         // set the interval for location updates, in milliseconds.
         //mLocationRequest.interval = 10000
@@ -142,8 +146,8 @@ class LocationKitActivity : AppCompatActivity() {
             ?.addOnSuccessListener {
                 Log.i(TAG, "check location settings success")
                 // request location updates
-                fusedLocationProviderClient
-                    ?.requestLocationUpdates(
+                fusedLocation
+                    .requestLocationUpdates(
                         mLocationRequest,
                         mLocationCallback,
                         Looper.getMainLooper())
@@ -172,7 +176,7 @@ class LocationKitActivity : AppCompatActivity() {
      * remove the request with callback
      */
     private fun removeLocationUpdatesWithCallback() {
-        fusedLocationProviderClient?.removeLocationUpdates(mLocationCallback)
+        fusedLocation.removeLocationUpdates(mLocationCallback)
     }
 
 

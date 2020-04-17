@@ -87,6 +87,8 @@ class MapKitActivity : AppCompatActivity(), OnMapReadyCallback {
         mMapView?.onCreate(mapViewBundle)
         //get map instance
         mMapView?.getMapAsync(this)
+
+
     }
 
 

@@ -9,6 +9,7 @@ import com.dkbrothers.apps.mapkithuawei.crashservice.CrashServiceActivity
 import com.dkbrothers.apps.mapkithuawei.locationkit.LocationKitActivity
 import com.dkbrothers.apps.mapkithuawei.mapkit.MapKitActivity
 import com.dkbrothers.apps.mapkithuawei.pushkit.PuskKitActivity
+import com.huawei.agconnect.crash.AGConnectCrash
 
 
 class HomeActivity : AppCompatActivity() {
