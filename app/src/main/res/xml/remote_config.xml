@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <remoteconfig>
-    <value key="activeColorBlue">true</value>
+    <value key="activeColorBlue">false</value>
+    <value key="backgroundColor">#000000</value>
 </remoteconfig>

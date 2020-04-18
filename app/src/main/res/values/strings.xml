@@ -26,4 +26,5 @@
     <string name="you_earned_d_points">You earned %d points</string>
     <string name="go_to_develop_quality_analytics"><![CDATA[Go to AppGallery Connect > Analytics > Click the name of an app > Advanced analysis > Dashboard > App overview. The Analytics page is displayed]]></string>
     <string name="remote_configuration">Remote Configuration</string>
+    <string name="active_blue">Active blue</string>
 </resources>

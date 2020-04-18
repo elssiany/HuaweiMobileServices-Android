@@ -8,5 +8,7 @@
     <string name="analytics_kit_documentation_link"
         translatable="false">https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3021001</string>
     <string name="crash_service_documentation_link"
-        translatable="false">https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-crash-introduction</string>
+        translatable="false">https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-crash-introduction</string>}
+    <string name="remote_config_documentation_link"
+        translatable="false">https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-dev-guide</string>
 </resources>

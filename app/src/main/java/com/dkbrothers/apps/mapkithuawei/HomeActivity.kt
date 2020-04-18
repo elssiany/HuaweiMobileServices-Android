@@ -9,7 +9,9 @@ import com.dkbrothers.apps.mapkithuawei.crashservice.CrashServiceActivity
 import com.dkbrothers.apps.mapkithuawei.locationkit.LocationKitActivity
 import com.dkbrothers.apps.mapkithuawei.mapkit.MapKitActivity
 import com.dkbrothers.apps.mapkithuawei.pushkit.PuskKitActivity
+import com.dkbrothers.apps.mapkithuawei.remoteconfiguration.RemoteConfigurationActivity
 import com.huawei.agconnect.crash.AGConnectCrash
+import com.huawei.agconnect.remoteconfig.AGConnectConfig
 
 
 class HomeActivity : AppCompatActivity() {
@@ -17,6 +19,7 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        AGConnectConfig.getInstance().applyDefault(R.xml.remote_config)
     }
 
     fun onPushKit(view: View) {
@@ -41,7 +44,7 @@ class HomeActivity : AppCompatActivity() {
 
 
     fun onRemoteConfiguration(view: View) {
-        startActivity(Intent(this, CrashServiceActivity::class.java))
+        startActivity(Intent(this, RemoteConfigurationActivity::class.java))
     }
 
 
