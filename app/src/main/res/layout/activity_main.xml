@@ -66,6 +66,14 @@
             style="@style/HomeStyleButtons"
             android:text="@string/remote_configuration"/>
 
+
+        <Button
+            android:drawableStart="@drawable/remote_config_icon"
+            android:onClick="onAppPerformanceManagement"
+            android:layout_width="match_parent"
+            style="@style/HomeStyleButtons"
+            android:text="@string/app_performance_management"/>
+
     </LinearLayout>
 
 </ScrollView>

@@ -11,4 +11,6 @@
         translatable="false">https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-crash-introduction</string>}
     <string name="remote_config_documentation_link"
         translatable="false">https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-dev-guide</string>
+    <string name="apm_documentation_link"
+        translatable="false">https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-apms-introduction</string>
 </resources>

@@ -11,7 +11,10 @@ import com.dkbrothers.apps.mapkithuawei.R
 import com.huawei.agconnect.remoteconfig.AGConnectConfig
 import kotlinx.android.synthetic.main.activity_remote_configuration.*
 
-
+/*
+ * todo Remote Configuration Docs
+  *https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-dev-guide
+ * */
 class RemoteConfigurationActivity : AppCompatActivity() {
 
     private lateinit var remoteConfig:AGConnectConfig

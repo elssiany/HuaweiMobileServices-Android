@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,LockedOrientationActivity">
-        <activity android:name=".remoteconfiguration.RemoteConfigurationActivity"></activity>
+        <activity android:name=".appperformancemanagement.AppPerformanceManagementActivity"></activity>
+        <activity android:name=".remoteconfiguration.RemoteConfigurationActivity" />
         <activity
             android:name=".crashservice.CrashServiceActivity"
             android:screenOrientation="portrait" />
