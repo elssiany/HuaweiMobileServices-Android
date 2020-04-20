@@ -31,12 +31,14 @@ class RemoteConfigurationActivity : AppCompatActivity() {
 
     //Applying parameter values immediately
     private fun applyNow(){
-        remoteConfig.fetch().addOnSuccessListener { configValues ->
+        remoteConfig.fetch(50000).addOnSuccessListener { configValues ->
             remoteConfig.apply(configValues)
             // Call methods such as getString() to obtain applied values.
             changeBackgroundColor(remoteConfig.getValueAsString("backgroundColor"))
             if(remoteConfig.getValueAsBoolean("activeColorBlue"))
                 btn_go_test.visibility = View.VISIBLE
+            else
+                btn_go_test.visibility = View.GONE
         }.addOnFailureListener { }
     }
 
@@ -49,6 +51,8 @@ class RemoteConfigurationActivity : AppCompatActivity() {
         changeBackgroundColor(remoteConfig.getValueAsString("backgroundColor"))
         if(remoteConfig.getValueAsBoolean("activeColorBlue"))
             btn_go_test.visibility = View.VISIBLE
+        else
+            btn_go_test.visibility = View.GONE
     }
 
     private fun changeBackgroundColor(colorId:String){

@@ -104,7 +104,7 @@ class AnalyticsKitActivity : AppCompatActivity() {
     }
 
     private fun analyzeAnswer(answer: String){
-        val normalizedAnswer = answer.toUpperCase(Locale.getDefault())
+        val normalizedAnswer = answer.toLowerCase(Locale.getDefault())
         val score:Int
         score = if(normalizedAnswer==correctAnswer){
             100

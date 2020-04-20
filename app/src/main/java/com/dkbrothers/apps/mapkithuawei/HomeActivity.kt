@@ -20,7 +20,9 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        AGConnectConfig.getInstance().applyDefault(R.xml.remote_config)
+        val remoteConfig = AGConnectConfig.getInstance()
+        remoteConfig.setDeveloperMode(true)
+        remoteConfig.applyDefault(R.xml.remote_config)
     }
 
     fun onPushKit(view: View) {
