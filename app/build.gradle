@@ -73,4 +73,7 @@ dependencies {
     //App Performance Management(APM)
     implementation 'com.huawei.agconnect:agconnect-apms:1.2.1.201'
 
+    //App Linking
+    implementation 'com.huawei.agconnect:agconnect-applinking:1.3.0.300'
+
 }
