@@ -30,6 +30,9 @@ class PushKitService: HmsMessageService() {
             Log.i(TAG, "Message data payload: " + remoteMessage.data)
         }
         if (remoteMessage.notification != null) {
+            val a = remoteMessage.notification.intentUri
+            Toast.makeText(this,
+                remoteMessage.notification.intentUri,Toast.LENGTH_LONG).show()
             Log.i(TAG, "Message Notification Body: " + remoteMessage.notification.body)
             Toast.makeText(this,
                 getString(R.string.notification_came_through_pushkit),Toast.LENGTH_LONG).show()
@@ -37,7 +40,9 @@ class PushKitService: HmsMessageService() {
     }
 
 
-    override fun onMessageSent(s: String?) {}
+    override fun onMessageSent(s: String?) {
+
+    }
 
 
     override fun onSendError(s: String?, e: Exception?) {}
