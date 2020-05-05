@@ -33,7 +33,7 @@ class AnalyticsKitActivity : AppCompatActivity() {
     private val correctAnswer = "huawei device"
 
     // TODO: Analytics Instance
-    var hiAnalyticsInstance: HiAnalyticsInstance? = null
+    private var hiAnalyticsInstance: HiAnalyticsInstance? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -45,7 +45,9 @@ class PushKitService: HmsMessageService() {
     }
 
 
-    override fun onSendError(s: String?, e: Exception?) {}
+    override fun onSendError(s: String?, e: Exception?) {
+
+    }
 
 
 }
