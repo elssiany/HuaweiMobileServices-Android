@@ -46,7 +46,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.core:core-ktx:1.3.0'
 
     //UI
     implementation 'com.google.android.material:material:1.1.0'
@@ -56,24 +56,24 @@ dependencies {
     implementation 'com.huawei.hms:maps:4.0.1.301'
 
     //Location Kit
-    implementation 'com.huawei.hms:location:4.0.2.300'
+    implementation 'com.huawei.hms:location:4.0.4.300'
 
     //Push Kit
-    implementation 'com.huawei.hms:push:4.0.2.300'
+    implementation 'com.huawei.hms:push:4.0.4.301'
 
     //Analytics Kit
-    implementation 'com.huawei.hms:hianalytics:4.0.3.300'
+    implementation 'com.huawei.hms:hianalytics:5.0.0.301'
 
     //Crash Servise
-    implementation 'com.huawei.agconnect:agconnect-crash:1.3.0.300'
+    implementation 'com.huawei.agconnect:agconnect-crash:1.3.2.301'
 
     //AppGallery Connect Remote Configuration
-    implementation 'com.huawei.agconnect:agconnect-remoteconfig:1.3.0.300'
+    implementation 'com.huawei.agconnect:agconnect-remoteconfig:1.3.2.301'
 
     //App Performance Management(APM)
-    implementation 'com.huawei.agconnect:agconnect-apms:1.2.1.201'
+    implementation 'com.huawei.agconnect:agconnect-apms:1.2.1.301'
 
     //App Linking
-    implementation 'com.huawei.agconnect:agconnect-applinking:1.3.0.300'
+    implementation 'com.huawei.agconnect:agconnect-applinking:1.3.2.301'
 
 }
