@@ -74,6 +74,14 @@
             style="@style/HomeStyleButtons"
             android:text="@string/app_performance_management"/>
 
+
+        <Button
+            android:drawableStart="@drawable/adskit_icon"
+            android:onClick="onAdskit"
+            android:layout_width="match_parent"
+            style="@style/HomeStyleButtons"
+            android:text="@string/ads_kit"/>
+
     </LinearLayout>
 
 </ScrollView>

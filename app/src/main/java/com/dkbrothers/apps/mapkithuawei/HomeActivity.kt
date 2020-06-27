@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.dkbrothers.apps.mapkithuawei.adskit.AdsKitActivity
 import com.dkbrothers.apps.mapkithuawei.analyticskit.AnalyticsKitActivity
 import com.dkbrothers.apps.mapkithuawei.appperformancemanagement.AppPerformanceManagementActivity
 import com.dkbrothers.apps.mapkithuawei.crashservice.CrashServiceActivity
@@ -53,6 +54,10 @@ class HomeActivity : AppCompatActivity() {
 
     fun onAppPerformanceManagement(view: View) {
         startActivity(Intent(this, AppPerformanceManagementActivity::class.java))
+    }
+
+    fun onAdskit(view: View) {
+        startActivity(Intent(this, AdsKitActivity::class.java))
     }
 
 }

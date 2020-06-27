@@ -76,4 +76,7 @@ dependencies {
     //App Linking
     implementation 'com.huawei.agconnect:agconnect-applinking:1.3.2.301'
 
+    //Ads Kit
+    implementation 'com.huawei.hms:ads-lite:13.4.30.301'
+
 }

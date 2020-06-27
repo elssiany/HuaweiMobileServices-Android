@@ -24,7 +24,7 @@ class CrashServiceActivity : AppCompatActivity() {
 
 
     fun onCrashTest(view: View) {
-        AGConnectCrash.getInstance().testIt()
+        AGConnectCrash.getInstance().testIt(this)
     }
 
 

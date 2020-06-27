@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.dkbrothers.apps.mapkithuawei">
 
@@ -17,15 +16,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,LockedOrientationActivity">
+        <activity android:name=".adskit.AdsKitActivity"></activity>
         <activity
-            android:screenOrientation="portrait"
-            android:name=".locationkit.LocationToMapActivity"/>
+            android:name=".locationkit.LocationToMapActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:screenOrientation="portrait"
-            android:name=".appperformancemanagement.AppPerformanceManagementActivity"/>
+            android:name=".appperformancemanagement.AppPerformanceManagementActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:screenOrientation="portrait"
-            android:name=".remoteconfiguration.RemoteConfigurationActivity" />
+            android:name=".remoteconfiguration.RemoteConfigurationActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".crashservice.CrashServiceActivity"
             android:screenOrientation="portrait" />
